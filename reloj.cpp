@@ -30,6 +30,24 @@ class Hora{
 		int getSegundos();
 };
 
+Hora::Hora(int hrs,int min,int seg){
+	hora=hrs;
+	minutos=min;
+	segundos=seg;
+}
+
+int Hora::getHora(){
+	return hora;
+}
+
+int Hora::getMinutos(){
+	return minutos;
+}
+
+int Hora::getSegundos(){
+	return segundos;
+}
+
 
 int main(){
 	

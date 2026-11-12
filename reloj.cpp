@@ -25,6 +25,9 @@ class Hora{
 		int segundos;
 	public:
 		Hora(int,int,int);
+		int getHora();
+		int getMinutos();
+		int getSegundos();
 };
 
 

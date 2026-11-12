@@ -10,6 +10,15 @@ class Display{
 		string getTipo();
 };
 
+Display::Display(string tip){
+	tipo= tip;
+}
+
+string Display::getTipo(){
+	return tipo;
+}
+
+
 int main(){
 	
 	

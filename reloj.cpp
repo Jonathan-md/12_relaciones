@@ -18,6 +18,15 @@ string Display::getTipo(){
 	return tipo;
 }
 
+class Hora{
+	private:
+		int hora;
+		int minutos;
+		int segundos;
+	public:
+		Hora(int,int,int);
+};
+
 
 int main(){
 	

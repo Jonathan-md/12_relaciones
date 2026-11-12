@@ -48,6 +48,14 @@ int Hora::getSegundos(){
 	return segundos;
 }
 
+class Reloj{
+	private:
+		Display *pDisplay;
+		Hora *pHora;
+	public:
+		Reloj(int,int,int);
+};
+
 
 int main(){
 	

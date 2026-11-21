@@ -77,7 +77,7 @@ int main(){
 	cin>>dia;
 	cout<<"Mes: ";
 	cin>>mes;
-	cout<<"Año: "; 
+	cout<<"Ano: "; 
 	cin>>ano;
 	cout<<"Hora: ";
 	cin>>hora;

@@ -85,5 +85,24 @@ void Reloj::mostrarReloj(){
 
 
 int main(){
+	int hora,minuto,segundo;
+	string tipo;
+	
+	cout<<"Hora: ";
+	cin>>hora;
+	cout<<"Minutos: ";
+    cin>>minuto;
+    cout<<"Segundos: ";
+    cin>>segundo;
+
+	cout<<"Tipo de Display: ";
+	cin>>tipo;
+	
+	Display pantalla(tipo);
+	Reloj reloj(hora,minuto,segundo);
+	reloj.asignarDisplay(&pantalla);
+	cout<<"\n\n";
+	reloj.mostrarReloj();
+	
 	return 0;
 }

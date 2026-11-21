@@ -56,12 +56,22 @@ class OrdenTrabajo{
 		Auto aut;
 	public:
 		OrdenTrabajo(int,string,string,string,string,string,string,string);
-		void mostrarOrden();
+		void mostrarOrdenTrabajo();
 };
+
+OrdenTrabajo::OrdenTrabajo(int id,string nomb,string dirc,string telf,string mar,string mo,string co,string pla) : cliente(nomb,dirc,telf),aut(mar,mo,co,pla){
+	identf=id;
+}
+
+void OrdenTrabajo::mostrarOrdenTrabajo(){
+	cout<<"N° de Orden: "<<identf<<endl;
+	cout<<"\nDATOS DEL CLIENTE"<<endl;
+	cliente.mostrarCliente();
+	cout<<"\nDATOS DEL AUTO"<<endl;
+	aut.mostrarAuto();
+}
 
 int main(){
 	
 	return 0;
 }
-
-

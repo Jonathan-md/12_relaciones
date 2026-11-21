@@ -35,6 +35,20 @@ class Auto{
 		void mostrarAuto();
 };
 
+Auto::Auto(string mar,string mo,string co,string pla){
+	marca=mar;
+	modelo=mo;
+	color=co;
+	placa=pla;
+}
+
+void Auto::mostrarAuto(){
+	cout<<"Marca: "<<marca<<endl;
+	cout<<"Modelo: "<<modelo<<endl;
+	cout<<"Color: "<<color<<endl;
+	cout<<"Placa: "<<placa<<endl;
+}
+
 int main(){
 	
 	return 0;

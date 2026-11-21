@@ -68,18 +68,18 @@ void Reloj::asignarDisplay(Display *disp){
 
 void Reloj::mostrarReloj(){
     if(pDisplay->getTipo()=="digital"){
-        cout<<pDisplay->getTipo()<<endl;
+        cout<<"["<<endl;
         cout<<pHora->getHora()<<":";
         cout<<pHora->getMinutos()<<":";
         cout<<pHora->getSegundos();
         cout<<"]"<<endl;
     }
     else{
-        cout<<pDisplay->getTipo()<<endl;
+        cout<<"-->";
         cout<<pHora->getHora()<<":";
         cout<<pHora->getMinutos()<<":";
         cout<<pHora->getSegundos();
-        cout<<endl;
+        cout<<"<--"<<endl;
     }
 }
 

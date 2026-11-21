@@ -22,6 +22,16 @@ void Fecha::mostrarFecha(){
 	cout<<dia<<"/"<<mes<<"/"<<ano<<endl;
 }
 
+class Hora{
+	private:
+		int hora;
+		int minuto;
+	public:
+		Hora(int,int);
+		void mostrarHora();
+};
+
+
 int main(){
 	
 	return 0;

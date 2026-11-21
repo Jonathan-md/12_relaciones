@@ -51,6 +51,19 @@ class Examen{
 		void mostrarExamen();
 };
 
+Examen::Examen(string asg,string cic,int d,int m,int a,int hr,int min) : fecha(d,m,a), hora(hr,min){
+	asignatura=asg;
+	ciclo=cic;
+}
+
+void Examen::mostrarExamen(){
+	cout<<"Asignatura: "<<asignatura<<endl;
+	cout<<"Ciclo: "<<ciclo<<endl;
+	cout<<"Fecha: ";
+	fecha.mostrarFecha();
+	cout<<"Hora: ";
+	hora.mostrarHora();
+}
 
 int main(){
 	

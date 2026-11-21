@@ -54,11 +54,36 @@ class Reloj{
 		Hora *pHora;
 	public:
 		Reloj(int,int,int);
+		void asignarDisplay(Display*);
+        void mostrarReloj();
 };
+
+Reloj::Reloj(int h,int m,int s){
+    pHora=new Hora(h,m,s);
+}
+
+void Reloj::asignarDisplay(Display *disp){
+    pDisplay=disp;
+}
+
+void Reloj::mostrarReloj(){
+    if(pDisplay->getTipo()=="digital"){
+        cout<<pDisplay->getTipo()<<endl;
+        cout<<pHora->getHora()<<":";
+        cout<<pHora->getMinutos()<<":";
+        cout<<pHora->getSegundos();
+        cout<<"]"<<endl;
+    }
+    else{
+        cout<<pDisplay->getTipo()<<endl;
+        cout<<pHora->getHora()<<":";
+        cout<<pHora->getMinutos()<<":";
+        cout<<pHora->getSegundos();
+        cout<<endl;
+    }
+}
 
 
 int main(){
-	
-	
 	return 0;
 }

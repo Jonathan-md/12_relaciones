@@ -24,6 +24,16 @@ void Cliente::mostrarCliente(){
 	cout<<"Telefono: "<<telefono<<endl;
 }
 
+class Auto{
+	private:
+		string marca;
+		string modelo;
+		string color;
+		string placa;
+	public:
+		Auto(string,string,string,string);
+		void mostrarAuto();
+};
 
 int main(){
 	

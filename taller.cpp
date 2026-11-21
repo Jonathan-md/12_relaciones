@@ -64,7 +64,7 @@ OrdenTrabajo::OrdenTrabajo(int id,string nomb,string dirc,string telf,string mar
 }
 
 void OrdenTrabajo::mostrarOrdenTrabajo(){
-	cout<<"N° de Orden: "<<identf<<endl;
+	cout<<"Nro Orden: "<<identf<<endl;
 	cout<<"\nDATOS DEL CLIENTE"<<endl;
 	cliente.mostrarCliente();
 	cout<<"\nDATOS DEL AUTO"<<endl;
@@ -72,6 +72,32 @@ void OrdenTrabajo::mostrarOrdenTrabajo(){
 }
 
 int main(){
+	string nombre,direccion,telefono,marca,modelo,color,placa;
+	int identificador;
+	
+	cout<<"Ingrese Nro Orden: ";
+	cin>>identificador;
+	cin.ignore();
+	cout<<"Ingrese el nombre del cliente: ";
+	getline(cin,nombre);
+	cout<<"Ingrese la direccion del cliente: ";
+	getline(cin,direccion);
+	cout<<"Ingrese el telefono del cliente: ";
+	getline(cin,telefono);
+	cout<<"Ingrese la marca del auto: ";
+	getline(cin,marca);
+	cout<<"Ingrese el modelo del auto: ";
+	getline(cin,modelo);
+	cout<<"Ingrese el color del auto: ";
+	getline(cin,color);
+	cout<<"Ingrese la placa del auto: ";
+	getline(cin,placa);
+	
+	OrdenTrabajo orde(identificador,nombre,direccion,telefono,marca,modelo,color,placa);
+	
+	cout<<endl;
+	cout<<"ORDEN DE TRABAJO"<<endl;
+	orde.mostrarOrdenTrabajo();
 	
 	return 0;
 }

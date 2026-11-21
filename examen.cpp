@@ -66,6 +66,28 @@ void Examen::mostrarExamen(){
 }
 
 int main(){
+	string asignatura,ciclo;
+	int dia,mes,ano,hora,minuto;
+	
+	cout<<"Asignatura: ";
+	getline(cin,asignatura);
+	cout<<"Ciclo: ";
+	getline(cin,ciclo);
+	cout<<"Dia: ";
+	cin>>dia;
+	cout<<"Mes: ";
+	cin>>mes;
+	cout<<"Año: "; 
+	cin>>ano;
+	cout<<"Hora: ";
+	cin>>hora;
+	cout<<"Minutos: ";
+	cin>>minuto;
+	
+	Examen exm(asignatura,ciclo,dia,mes,ano,hora,minuto);
+	
+	cout<<"\nDATOS DEL EXAMEN"<<endl;
+	exm.mostrarExamen();
 	
 	return 0;
 }

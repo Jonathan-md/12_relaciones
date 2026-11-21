@@ -31,6 +31,15 @@ class Hora{
 		void mostrarHora();
 };
 
+Hora::Hora(int hr,int min){
+	hora=hr;
+	minuto=min;
+}
+
+void Hora::mostrarHora(){
+	cout<<hora<<":"<<minuto<<endl;
+}
+
 
 int main(){
 	

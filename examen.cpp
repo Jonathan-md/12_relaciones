@@ -40,36 +40,19 @@ void Hora::mostrarHora(){
 	cout<<hora<<":"<<minuto<<endl;
 }
 
+class Examen{
+	private:
+		string asignatura;
+		string ciclo;
+		Fecha fecha;
+		Hora hora;
+	public:
+		Examen(string,string,int,int,int,int,int);
+		void mostrarExamen();
+};
+
 
 int main(){
 	
 	return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

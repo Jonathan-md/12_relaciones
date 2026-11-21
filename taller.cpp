@@ -49,6 +49,16 @@ void Auto::mostrarAuto(){
 	cout<<"Placa: "<<placa<<endl;
 }
 
+class OrdenTrabajo{
+	private:
+		int identf;
+		Cliente cliente;
+		Auto aut;
+	public:
+		OrdenTrabajo(int,string,string,string,string,string,string,string);
+		void mostrarOrden();
+};
+
 int main(){
 	
 	return 0;

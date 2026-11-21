@@ -12,7 +12,22 @@ class Cliente{
 		void mostrarCliente();
 };
 
+Cliente::Cliente(string nomb,string dirc,string telf){
+	nombre=nomb;
+	direccion=dirc;
+	telefono=telf;
+}
+
+void Cliente::mostrarCliente(){
+	cout<<"Nombre: "<<nombre<<endl;
+	cout<<"Direccion: "<<direccion<<endl;
+	cout<<"Telefono: "<<telefono<<endl;
+}
+
+
 int main(){
 	
 	return 0;
 }
+
+
